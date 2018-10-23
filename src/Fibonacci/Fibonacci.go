@@ -18,7 +18,7 @@ func fibs(n int) int {
 }
 
 func Execute() {
-	n := 50
+	n := 30
 	startTime := time.Now()
 	ret := fibs(n)
 	useTime := time.Since(startTime)
@@ -26,7 +26,7 @@ func Execute() {
 }
 
 func Test() {
-	fmt.Println("Fibonacci.Test() begin!")
+	fmt.Println("\nFibonacci.Test() begin!")
 	Execute()
-	fmt.Print("\n")
+	fmt.Println()
 }

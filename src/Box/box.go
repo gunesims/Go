@@ -13,8 +13,11 @@ const (
 /* 颜色 */
 type Color byte
 
+// 不能使用:= 的赋值方式，:=的方式只能用在函数内部，函数外部使用则会无法编译通过
+// 一般使用var方式定义全局变量
+var strings = []string{"WHITE", "BLACK", "BLUE", "RED", "YELLOW"}
+
 func (c Color) String() string {
-	strings := []string{"WHITE", "BLACK", "BLUE", "RED", "YELLOW"}
 	return strings[c]
 }
 
@@ -82,5 +85,5 @@ func Execute() {
 func Test() {
 	fmt.Println("Box.Test() begin!")
 	Execute()
-	fmt.Print("\n")
+	fmt.Println()
 }

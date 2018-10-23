@@ -35,7 +35,7 @@ func Execute() {
 }
 
 func Test() {
-	fmt.Println("Employee.Test() begin!")
+	fmt.Println("\nEmployee.Test() begin!")
 	Execute()
-	fmt.Print("\n")
+	fmt.Println()
 }

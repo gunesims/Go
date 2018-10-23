@@ -1,15 +1,13 @@
 package main
 
-import (
-	"Area"
-	"Box"
-	"Employee"
-	"Fibonacci"
-)
+import "Base"
 
 func main() {
-	Area.Test()
-	Box.Test()
-	Employee.Test()
-	Fibonacci.Test()
+	//hello()
+	Base.Test()
+
+	//Area.Test()
+	//Box.Test()
+	//Employee.Test()
+	//Fibonacci.Test()
 }
