@@ -1,6 +1,9 @@
 package main
 
-import "Base"
+import (
+	"Base"
+	"WebTest"
+)
 
 func main() {
 	//hello()
@@ -10,4 +13,9 @@ func main() {
 	//Box.Test()
 	//Employee.Test()
 	//Fibonacci.Test()
+
+	//GoroutineTest.GoroutineTest()
+	//GoroutineTest.ChanTest()
+
+	WebTest.WebServerStart()
 }
