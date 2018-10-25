@@ -9,11 +9,13 @@ func execute() {
 	//gotoTest()
 	//forTest()
 	//switchTest()
-	//sumTest()
+	//funcTest()
+	//funcArgTest()
+	structTest()
 }
 
 func Test() {
-	fmt.Println("Base.Test() begin!")
+	fmt.Printf("Base.Test() begin!\n\n")
 	execute()
 	fmt.Println()
 }

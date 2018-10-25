@@ -1,4 +1,4 @@
-package Area
+package Method
 
 import (
 	"fmt"
@@ -13,6 +13,12 @@ type Circle struct {
 	radius float64
 }
 
+// 一般函数的定义是
+// func area(r Rectangle) float64 {
+//		return r.width * r.height
+// }
+// 下面这种方式实现的method，是Rectangle结构专属的函数
+// method area() 是依赖于某个形状(比如说Rectangle)来发生作用的。
 func (r Rectangle) area() float64 {
 	return r.width * r.height
 }
@@ -21,7 +27,7 @@ func (c Circle) area() float64 {
 	return c.radius * c.radius * math.Pi
 }
 
-func Execute() {
+func ExecuteArea() {
 	r1 := Rectangle{10, 20}
 	r2 := Rectangle{30, 40}
 
@@ -34,8 +40,8 @@ func Execute() {
 	fmt.Println("Area of c2 is:", c2.area())
 }
 
-func Test() {
+func TestArea() {
 	fmt.Println("\nArea.Test() begin!")
-	Execute()
+	ExecuteArea()
 	fmt.Println()
 }

@@ -1,9 +1,6 @@
 package main
 
-import (
-	"Base"
-	"WebTest"
-)
+import "Base"
 
 func main() {
 	//hello()

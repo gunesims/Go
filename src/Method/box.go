@@ -1,4 +1,4 @@
-package Box
+package Method
 
 import "fmt"
 
@@ -61,7 +61,7 @@ func (bl BoxList) PaintItBlack() {
 	}
 }
 
-func Execute() {
+func ExecuteBox() {
 	boxes := BoxList{
 		Box{Width: 4, Height: 4, Depth: 4, Color: RED},
 		Box{Width: 10, Height: 10, Depth: 1, Color: YELLOW},
@@ -82,8 +82,8 @@ func Execute() {
 	fmt.Println("Obviously, now, the biggest one is", boxes.BiggestColor().String())
 }
 
-func Test() {
+func TestBox() {
 	fmt.Println("Box.Test() begin!")
-	Execute()
+	ExecuteBox()
 	fmt.Println()
 }
