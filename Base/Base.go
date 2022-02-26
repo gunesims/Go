@@ -3,14 +3,14 @@ package Base
 import "fmt"
 
 func execute() {
-	//arrTest()
-	//mapTest()
-	//ifTest()
-	//gotoTest()
-	//forTest()
-	//switchTest()
-	//funcTest()
-	//funcArgTest()
+	arrTest()
+	mapTest()
+	ifTest()
+	gotoTest()
+	forTest()
+	switchTest()
+	funcTest()
+	funcArgTest()
 	structTest()
 }
 

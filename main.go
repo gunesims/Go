@@ -1,21 +1,24 @@
 package main
 
-import "Interface"
+import (
+	"GoTest/Base"
+	"GoTest/Fibonacci"
+	"GoTest/GoroutineTest"
+	"GoTest/Interface"
+	"GoTest/WebTest"
+)
 
 func main() {
-	//hello()
-	//Base.Test()
+	Base.Test()
 
-	//Area.Test()
-	//Box.Test()
-	//Employee.Test()
-	//Fibonacci.Test()
+	Fibonacci.Test()
 
-	//Interface.WriterInterfaceTest()
+	Interface.WriterInterfaceTest()
 	Interface.SortTest()
+	Interface.Test()
 
-	//GoroutineTest.GoroutineTest()
-	//GoroutineTest.ChanTest()
+	GoroutineTest.GoroutineTest()
+	GoroutineTest.ChanTest()
 
-	//WebTest.WebServerStart()
+	WebTest.WebServerStart()
 }

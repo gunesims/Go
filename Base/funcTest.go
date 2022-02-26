@@ -11,7 +11,7 @@ func SumAndProduct1(A, B int) (int, int) {
 	return add, Multiplied
 }
 
-// go中的函数能够在设置返回值时给返回的参数命名
+// SumAndProduct2 go中的函数能够在设置返回值时给返回的参数命名
 func SumAndProduct2(A, B int) (add int, Multiplied int) {
 	add = A + B
 	Multiplied = A * B
@@ -31,7 +31,7 @@ func pointFunc(a *int) int {
 
 // 使用defer，在函数结束后逆序执行
 func deferFunc() bool {
-	f, err := os.Open("./src/Base/file")
+	f, err := os.Open("./Base/file")
 	defer f.Close()
 
 	defer fmt.Println("This is first defer.")
