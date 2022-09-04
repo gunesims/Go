@@ -1,6 +1,9 @@
 package GoroutineTest
 
-import "runtime"
+import (
+	"runtime"
+	"testing"
+)
 
 func sayHi(s string) {
 	for i := 0; i < 5; i++ {
@@ -9,7 +12,7 @@ func sayHi(s string) {
 	}
 }
 
-func GoroutineTest() {
+func TestGoroutine(t *testing.T) {
 	go sayHi("Goroutine say hi.")
 	sayHi("Sample say hi.")
 	//println()

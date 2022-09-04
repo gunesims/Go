@@ -1,6 +1,9 @@
 package Base
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type testInt func(int) bool
 
@@ -23,7 +26,7 @@ func filter(inputArr []int, filterFunc testInt) []int {
 	return outputArr
 }
 
-func funcArgTest() {
+func TestFuncArgs(t *testing.T) {
 	intputArr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
 	fmt.Printf("Even number list is -> %v\n", filter(intputArr, isEven))
 	fmt.Printf("Odd number list is -> %v\n", filter(intputArr, isOdd))

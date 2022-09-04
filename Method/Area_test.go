@@ -3,6 +3,7 @@ package Method
 import (
 	"fmt"
 	"math"
+	"testing"
 )
 
 type Rectangle struct {
@@ -40,7 +41,7 @@ func ExecuteArea() {
 	fmt.Println("Area of c2 is:", c2.area())
 }
 
-func TestArea() {
+func TestArea(t *testing.T) {
 	fmt.Println("\nArea.Test() begin!")
 	ExecuteArea()
 	fmt.Println()

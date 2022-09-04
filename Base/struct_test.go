@@ -1,6 +1,9 @@
 package Base
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type person struct {
 	name string
@@ -15,7 +18,7 @@ func older(p1, p2 person) (person, int) {
 	return p2, p2.age - p1.age
 }
 
-func personTest() {
+func TestPerson(t *testing.T) {
 	var tom person
 	tom.name, tom.age = "tom", 12
 
@@ -42,7 +45,7 @@ type student struct {
 	speciality string
 }
 
-func studentTest() {
+func TestStudent(t *testing.T) {
 	mark := student{human{"Mark", 16, 50}, "Computer Science"}
 
 	fmt.Println()
@@ -51,9 +54,4 @@ func studentTest() {
 	fmt.Println("His weight is", mark.human.weight)
 	fmt.Println("His speciality is", mark.speciality)
 
-}
-
-func structTest() {
-	personTest()
-	studentTest()
 }

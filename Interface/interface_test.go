@@ -2,6 +2,7 @@ package Interface
 
 import (
 	"fmt"
+	"testing"
 )
 
 type Human struct {
@@ -44,7 +45,7 @@ type Men interface {
 	Sing(lyrics string)
 }
 
-func Test() {
+func Test(t *testing.T) {
 	mark := Student{Human{"Mark", 12, "13634654987"}, "CQ", 32.1}
 	paul := Student{Human{"Paul", 16, "999-888-555"}, "MIT", 23.3}
 

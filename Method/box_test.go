@@ -1,6 +1,9 @@
 package Method
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 const (
 	WHITE = iota
@@ -82,7 +85,7 @@ func ExecuteBox() {
 	fmt.Println("Obviously, now, the biggest one is", boxes.BiggestColor().String())
 }
 
-func TestBox() {
+func TestBox(t *testing.T) {
 	fmt.Println("Box.Test() begin!")
 	ExecuteBox()
 	fmt.Println()

@@ -1,8 +1,11 @@
 package Base
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func arrTest() {
+func TestSlice(t *testing.T) {
 	var array = [10]string{"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"}
 	var aSlice, bSlice, cSlice []string
 

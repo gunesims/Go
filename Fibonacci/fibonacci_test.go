@@ -2,6 +2,7 @@ package Fibonacci
 
 import (
 	"fmt"
+	"testing"
 	"time"
 )
 
@@ -25,8 +26,6 @@ func Execute() {
 	fmt.Printf("fibs(%d) -> %d use time -> %v", n, ret, useTime)
 }
 
-func Test() {
-	fmt.Println("\nFibonacci.Test() begin!")
+func TestFibonacci(t *testing.T) {
 	Execute()
-	fmt.Println()
 }

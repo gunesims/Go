@@ -1,6 +1,9 @@
 package Method
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type Human struct {
 	name  string
@@ -40,7 +43,7 @@ func ExecuteEmployee() {
 	sam.SayHi()
 }
 
-func TestEmployee() {
+func TestEmployee(t *testing.T) {
 	fmt.Println("\nEmployee.Test() begin!")
 	ExecuteEmployee()
 	fmt.Println()

@@ -1,6 +1,9 @@
 package Interface
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 type ByteSlice []byte
 
@@ -24,7 +27,7 @@ func (p *ByteSlice) Write(data []byte) (n int, err error) {
 	return len(data), nil
 }
 
-func WriterInterfaceTest() {
+func TestWriterInterface(t *testing.T) {
 	var b ByteSlice
 	fmt.Fprintf(&b, "Hello %v", "Tom")
 }

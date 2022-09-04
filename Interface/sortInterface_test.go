@@ -3,6 +3,7 @@ package Interface
 import (
 	"fmt"
 	"sort"
+	"testing"
 )
 
 type Sequence []int
@@ -38,7 +39,7 @@ func (s Sequence) String() string {
 	return fmt.Sprint([]int(s))
 }
 
-func SortTest() {
+func TestSort(t *testing.T) {
 	s := Sequence{1, 23, 14, 65, 96, 7, 78}
 	fmt.Println("After sort:", s)
 }

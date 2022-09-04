@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	"testing"
 )
 
 // http.ResponseWriter 为interface，使用的时方法
@@ -30,4 +31,8 @@ func WebServerStart() {
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
+}
+
+func TestWebServer(t *testing.T) {
+	WebServerStart()
 }

@@ -1,8 +1,11 @@
 package Base
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func switchTest() {
+func TestSwitch(t *testing.T) {
 	// go中的switch语句默认是匹配到后跳出剩下的匹配，如果需要继续匹配，需要使用关键字fallthrough，这点与c++不同
 
 	i := 6

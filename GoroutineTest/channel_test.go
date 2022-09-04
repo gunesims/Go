@@ -1,5 +1,7 @@
 package GoroutineTest
 
+import "testing"
+
 func sum(a []int, c chan int) {
 	total := 0
 	for _, v := range a {
@@ -10,7 +12,7 @@ func sum(a []int, c chan int) {
 	c <- total
 }
 
-func ChanTest() {
+func TestChannel(t *testing.T) {
 	a := []int{1, 2, 3, 4, 5, 6, 7, 8}
 
 	c := make(chan int, 3) // 类似于python队列，设置一个队列的长度，当队列满员时报错

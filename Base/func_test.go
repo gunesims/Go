@@ -3,6 +3,7 @@ package Base
 import (
 	"fmt"
 	"os"
+	"testing"
 )
 
 func SumAndProduct1(A, B int) (int, int) {
@@ -50,29 +51,29 @@ func deferFunc() bool {
 	return true
 }
 
-func funcTest() {
-	//x := 3
-	//y := 4
-	//
-	//xPLUSy, xTIMESy := SumAndProduct1(x, y)
-	//fmt.Println("With SumAndProduct1：")
-	//fmt.Printf("%d + %d = %d\n", x, y, xPLUSy)
-	//fmt.Printf("%d * %d = %d\n", x, y, xTIMESy)
-	//
-	//fmt.Println()
-	//xPLUSy, xTIMESy = SumAndProduct2(x, y)
-	//fmt.Println("With SumAndProduct2：")
-	//fmt.Printf("%d + %d = %d\n", x, y, xPLUSy)
-	//fmt.Printf("%d * %d = %d\n", x, y, xTIMESy)
-	//
-	//fmt.Println()
-	//argFunc(1, 2, 2, 3, 4, 5, 67, 8)
-	//
-	//fmt.Println()
-	//b := 3
-	//fmt.Println("Before pointFunc, b -> ", b)
-	//b1 := pointFunc(&b)
-	//fmt.Printf("After pointFunc, b -> %v, b1 -> %v ", b, b1)
+func TestFunc(t *testing.T) {
+	x := 3
+	y := 4
+
+	xPLUSy, xTIMESy := SumAndProduct1(x, y)
+	fmt.Println("With SumAndProduct1：")
+	fmt.Printf("%d + %d = %d\n", x, y, xPLUSy)
+	fmt.Printf("%d * %d = %d\n", x, y, xTIMESy)
+
+	fmt.Println()
+	xPLUSy, xTIMESy = SumAndProduct2(x, y)
+	fmt.Println("With SumAndProduct2：")
+	fmt.Printf("%d + %d = %d\n", x, y, xPLUSy)
+	fmt.Printf("%d * %d = %d\n", x, y, xTIMESy)
+
+	fmt.Println()
+	argFunc(1, 2, 2, 3, 4, 5, 67, 8)
+
+	fmt.Println()
+	b := 3
+	fmt.Println("Before pointFunc, b -> ", b)
+	b1 := pointFunc(&b)
+	fmt.Printf("After pointFunc, b -> %v, b1 -> %v ", b, b1)
 
 	deferFunc()
 }
