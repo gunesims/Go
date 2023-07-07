@@ -1,6 +1,8 @@
 package Base
 
-func gotoTest() {
+import "testing"
+
+func TestGoto(t *testing.T) {
 	i := 0
 here:
 	println(i)

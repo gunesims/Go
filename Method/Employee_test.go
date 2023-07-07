@@ -34,17 +34,11 @@ func (e *Employee) SayHi() {
 	fmt.Printf("Hi, I am %s, I working at %s. Call me on %s.\n", e.name, e.company, e.phone)
 }
 
-func ExecuteEmployee() {
+func TestExecuteEmployee(t *testing.T) {
 	mark := Student{Human{"mark", 18, "13669875485"}, "Microsoft"}
 	sam := Employee{Human{"sam", 30, "16549789321"}, "Google"}
 
 	mark.SayHi()
 	sam.Human.SayHi()
 	sam.SayHi()
-}
-
-func TestEmployee(t *testing.T) {
-	fmt.Println("\nEmployee.Test() begin!")
-	ExecuteEmployee()
-	fmt.Println()
 }

@@ -1,8 +1,11 @@
 package Base
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func mapTest() {
+func TestMap(t *testing.T) {
 	//var numbers map[string]int
 	numbers := make(map[string]int) // make用于内建类型（map、slice 和channel）的内存分配
 	numbers["one"] = 1

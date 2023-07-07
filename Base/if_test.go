@@ -1,6 +1,9 @@
 package Base
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 func scanfx() int {
 
@@ -10,7 +13,7 @@ func scanfx() int {
 	return x
 }
 
-func ifTest() {
+func TestIf(t *testing.T) {
 	//var x int
 	//fmt.Scanf("%d", &x)
 	//
