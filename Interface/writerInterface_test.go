@@ -29,5 +29,9 @@ func (p *ByteSlice) Write(data []byte) (n int, err error) {
 
 func TestWriterInterface(t *testing.T) {
 	var b ByteSlice
-	fmt.Fprintf(&b, "Hello %v", "Tom")
+	if _, err := fmt.Fprintf(&b, "Hello %v", "Tom"); err != nil {
+		return
+	} else {
+		fmt.Printf("%#v -> %#v\n", b, string(b))
+	}
 }

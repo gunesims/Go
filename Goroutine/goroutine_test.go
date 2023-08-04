@@ -1,4 +1,4 @@
-package GoroutineTest
+package Goroutine
 
 import (
 	"runtime"

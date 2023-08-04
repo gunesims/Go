@@ -12,6 +12,7 @@ func TestMap(t *testing.T) {
 	numbers["two"] = 2
 	numbers["three"] = 3
 	fmt.Println("\nnumbers[\"three\"] -> ", numbers["three"]) // 读取数据.
+	fmt.Println("\nnumbers[\"four\"] -> ", numbers["four"])   // 读取数据.
 
 	rating := map[string]float32{"C": 5, "Go": 4.5, "Python": 4.5, "C++": 2}
 	csharpRating, ok := rating["C#"]

@@ -2,6 +2,7 @@ package Interface
 
 import (
 	"fmt"
+	"strconv"
 	"testing"
 )
 
@@ -45,7 +46,7 @@ type Men interface {
 	Sing(lyrics string)
 }
 
-func Test(t *testing.T) {
+func TestInterface(t *testing.T) {
 	mark := Student{Human{"Mark", 12, "13634654987"}, "CQ", 32.1}
 	paul := Student{Human{"Paul", 16, "999-888-555"}, "MIT", 23.3}
 
@@ -72,12 +73,12 @@ func Test(t *testing.T) {
 
 	for index, value := range x {
 		value.SayHi()
-		value.Sing(string(index + 78))
+		value.Sing(strconv.Itoa(index))
 
 		// 查看数据的类型是否是指定类型，value, ok = element.(T)
-		//if v, ok := value.(Student); ok {
-		//	fmt.Println("value is Student -> ", v)
-		//}
+		if v, ok := value.(Student); ok {
+			fmt.Println("value is Student -> ", v)
+		}
 
 		switch v := value.(type) {
 		case Student:
