@@ -19,11 +19,11 @@ func fibs(n int) int {
 }
 
 func Execute() {
-	n := 30
+	n := 40
 	startTime := time.Now()
 	ret := fibs(n)
 	useTime := time.Since(startTime)
-	fmt.Printf("fibs(%d) -> %d use time -> %v", n, ret, useTime)
+	fmt.Printf("fibs(%d) -> %d use time -> %v\n", n, ret, useTime)
 }
 
 func TestFibonacci(t *testing.T) {
